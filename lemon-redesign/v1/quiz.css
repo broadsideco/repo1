@@ -1,0 +1,7 @@
+/* Optional fallback. The firm-site theme is injected by quiz.js.
+   Paste this only if you also paste quiz.js. Rollback is CONFIG.site.on = false. */
+body { background: #F4F7FB; color: #1F2B33; }
+.lrc-logo { height: 32px; width: auto; max-width: 100%; }
+@media (min-width: 768px) {
+  .lrc-logo { height: 44px; }
+}
