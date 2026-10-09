@@ -20,8 +20,9 @@ node --test lr-launch/v1l/quiz.test.mjs
 - Header text logo says **My Employee Rights**. Comments `TOM_LOGO` and `TOM_PHOTO` mark the logo and the hero photograph.
 - Hero sentence is "Injured at work? You could be sitting on a huge settlement", followed by Free check, No commitment, and Pay nothing.
 - One question is on screen. The percent in the bar is large. **Copy step link** copies a URL ending in the step hash.
-- Shareable steps: `#on-job`, `#federal`, `#attorney`, `#state`, `#incident`, `#description`, `#first-name`, `#last-name`, `#phone`, `#email`, `#zip`.
-- Contact stays one field per step, in this order: first name, last name, phone, email, ZIP. ZIP is still required and that step shows only the ZIP question.
+- Shareable steps: `#on-job`, `#federal`, `#attorney`, `#state`, `#zip`, `#incident`, `#description`, `#first-name`, `#last-name`, `#phone`, `#email`.
+- After a covered state, the next step is ZIP only. ZIP is still required. The step after ZIP is the incident date.
+- First name, last name, phone, and email stay one field per step.
 - The email step shows the email field, the consent checkbox, and the `lr-consent-v2` paragraph. Its button reads **Agree and Continue**. Unchecked consent stays on the email step.
 
 ## Disqualification

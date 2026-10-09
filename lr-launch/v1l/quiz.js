@@ -60,13 +60,13 @@ export const STEP_IDS = Object.freeze([
   "federal",
   "attorney",
   "state",
+  "zip",
   "incident",
   "description",
   "first-name",
   "last-name",
   "phone",
   "email",
-  "zip",
 ]);
 
 /** Hard stops. A lead is not saved. */
@@ -217,6 +217,9 @@ export function evaluateLead(input, today = new Date()) {
   const state = String(answers.state || "").trim().toUpperCase();
   if (!QUALIFYING_STATES.includes(state)) return fail("state", "state");
 
+  const zip = normalizeZip(answers.zip);
+  if (!zip) return fail("zip", "zip");
+
   if (!parseMmDdYyyy(answers.incidentDate)) return fail("incident_window", "incident");
   if (!isWithinIncidentWindow(answers.incidentDate, state, today)) {
     return fail("incident_window", "incident");
@@ -233,8 +236,6 @@ export function evaluateLead(input, today = new Date()) {
   if (!phone) return fail("contact", "phone");
   const email = normalizeEmail(answers.email);
   if (!email) return fail("contact", "email");
-  const zip = normalizeZip(answers.zip);
-  if (!zip) return fail("zip", "zip");
 
   if (answers.consent !== true) return fail("consent", "email");
 
@@ -572,7 +573,7 @@ function init() {
     } catch {
       saving = false;
       continueBtn.disabled = false;
-      continueBtn.textContent = "Continue";
+      continueBtn.textContent = steps[index].dataset.step === "email" ? "Agree and Continue" : "Continue";
       showStepError(steps[index], "We could not save this case check. Please try again.");
     }
   });

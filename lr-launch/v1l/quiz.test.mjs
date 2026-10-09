@@ -78,10 +78,12 @@ test("page keeps the firm hero and placeholder logo notes", () => {
 });
 
 test("contact fields are one step each, in order, and ZIP stays required", () => {
-  const contactOrder = ["first-name", "last-name", "phone", "email", "zip"];
+  const contactOrder = ["first-name", "last-name", "phone", "email"];
   const ids = [...html.matchAll(/data-step="([^"]+)"/g)].map((match) => match[1]);
+  assert.equal(ids[ids.indexOf("state") + 1], "zip");
+  assert.equal(ids[ids.indexOf("zip") + 1], "incident");
   assert.deepEqual(ids.filter((id) => contactOrder.includes(id)), contactOrder);
-  for (const id of contactOrder) {
+  for (const id of [...contactOrder, "zip"]) {
     const block = html.split(`data-step="${id}"`)[1].split("data-step=")[0];
     const fields = block.match(/<(input|textarea|select)\b/g) || [];
     assert.equal(fields.length, id === "email" ? 3 : 1, id);
