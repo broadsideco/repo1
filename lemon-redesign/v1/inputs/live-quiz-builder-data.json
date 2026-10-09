@@ -1,0 +1,4445 @@
+[
+ {
+  "id": "q02a6aeb-72cb-4cff-a39a-269777a0b643",
+  "code": {
+   "js": "(omitted: same as live-custom-code-lrc-wa-v0.1.js)",
+   "css": "/* These styles apply only to this quiz. \n   Use this area to customize the appearance of quiz elements. */\n\n/* .ll-quiz-step {\nbackground: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n} */\n"
+  },
+  "steps": [
+   {
+    "id": "step-d5fed921-27bd-4d5a-b582-002bc54e5af8",
+    "name": "q1-state",
+    "blocks": [
+     {
+      "id": "block-cbe5d951-67b3-403c-b0df-f86a252507f9",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Where did you buy or lease your vehicle?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-2a4c8dbd-811f-4524-b4ca-5b7560c31610",
+      "name": "lead_id",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-c781c235-5c2d-48bf-b71b-a1991d5520a6",
+      "name": "campaign_id",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": "BRD-WA-LEMON-PILOT"
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-0a191cdd-dfdf-44ec-9743-4723a37388ee",
+      "name": "adset_id",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-9c6cb1d3-3cb3-46ef-9833-a0083ae3e62a",
+      "name": "ad_id",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-849f75ca-cf35-4522-8e08-b538ca8013ce",
+      "name": "source",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-f8a1c507-8496-413d-8c3c-66e7c831670e",
+      "name": "utm_source",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-820ce7eb-3e2c-4031-8bae-3d462ced1eeb",
+      "name": "utm_medium",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-f15a847d-3f69-4a95-8cbc-6b85c138c093",
+      "name": "utm_campaign",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-3cd36fb5-1ae1-4def-88c3-1976c8d3ffcb",
+      "name": "utm_content",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-304b9b03-0b8f-43a1-a3ce-d49a612d715a",
+      "name": "utm_term",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-5bce5df2-44a3-4767-aeb1-0ae0a2353dc6",
+      "name": "fbclid",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-9591fc04-fee7-46c7-a00f-02adf5b66803",
+      "name": "click_id",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-69d6031c-14f2-444f-aa00-12952ef5f887",
+      "name": "started_at",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-619d1585-2d36-4e48-8b29-f1fafdd4ddd6",
+      "name": "time_zone",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-8a2c0610-6f21-4fcd-bb0b-9629bab69878",
+      "name": "landing_page",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-54a5b972-e89f-42ad-b6a5-fa54535a20ef",
+      "name": "purchase_state_wa",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-df7eaf62-fa97-4e95-b15b-2293df7bce70",
+        "label": "In Washington",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "yes",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-6c0c1d00-6fb1-4517-bb13-025e546767d3",
+        "label": "In another state",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "no",
+        "navigation": {
+         "step": "step-2ddcaebf-4de0-4808-955e-87db4a78d0b9",
+         "type": "go-to-step"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 1,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 1
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-46b4d4a8-e30b-4fd3-a639-2b35ac813898",
+      "name": "Text",
+      "text": "<p>Takes about a minute. No obligation.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-decd8277-0512-4b07-b950-6a8dbfbd8ff2",
+      "name": "page_version",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": "lrc-wa-v0.1"
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-b04a9078-a06d-4161-9861-ba11ca8d34c2",
+      "name": "funnel",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": "wa-lemon-quiz"
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-e87ec9d8-9432-4fd8-a486-962607fe8822",
+      "name": "original_source",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-200bf878-f808-4696-9af7-77ad8aad1ebe",
+      "name": "state",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": "WA"
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-64ef5a1c-3f19-4699-abcb-b194ffeaced9",
+      "name": "zip_state",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-625a642c-38a3-4945-a3db-f53d83e64c07",
+      "name": "zip_mismatch_seen",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": "no"
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-afeecd9d-1391-428e-b605-fe733a00173f",
+      "name": "phone_10",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-bbee2d82-a873-45b6-a690-197ad275d15f",
+      "name": "buyer",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": "Prestige Legal Solutions, P.C."
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-99e37656-0d5c-4f27-aabf-be20da09a918",
+      "name": "consent_text",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-ee226f40-56bf-4e34-9a98-e8ae473d3a66",
+      "name": "consent_version",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-74b7f3df-a0b0-481c-82aa-71f7b0ca745a",
+      "name": "consent_hash",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-30c00b5b-29ac-4a03-b0b0-86984c54c05f",
+      "name": "consent_checked_at",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-c5cb65d5-a963-4c09-bdd7-6feb0d058a27",
+      "name": "route_status",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-322a8ef3-49b1-4ed7-8ed2-1ef42b0ac4e4",
+      "name": "dq_reason",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-5d8fe52d-6370-4f3d-982a-62d2cebb4867",
+      "name": "lead_summary",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-70badb66-d1a5-4144-b252-7e958d9f4404",
+      "name": "is_test",
+      "type": "hidden-field",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": "no"
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-ee59c706-7f41-4504-82d4-1fa1fb54164a",
+    "name": "q2-acquire",
+    "blocks": [
+     {
+      "id": "block-a9b321b8-a7a0-441c-9964-72ee8bd785d1",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Did you buy it or lease it?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-200e7c5d-07b4-422d-863e-2f08ee741576",
+      "name": "acquisition_type",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-b8a9697e-b625-4555-9546-782998e49a54",
+        "label": "Bought (financed or paid in full)",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "purchased",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-e3217927-7ddc-44c4-9426-303da9939e7b",
+        "label": "Leased",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "leased",
+        "navigation": {
+         "type": "next-step"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 1,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 1
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-65d3e8e6-6e44-4632-8665-35df9e684c27",
+      "name": "back-q2",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-9d9d54e2-b5eb-4a17-928f-3ad333f5876a",
+    "name": "q3-condition",
+    "blocks": [
+     {
+      "id": "block-142c838b-2b6a-4f06-8c86-7649b2c131e6",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Was it new or used when you got it?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-b4299de8-f11a-4411-bf7e-5e239676bd99",
+      "name": "purchase_type",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-1f7964fa-97c7-4723-a6e9-f0d1fd88f3d5",
+        "label": "New",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "new",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-3c46b72b-9fd9-4676-86f6-a0b7c35ba9ee",
+        "label": "Used",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "used",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-91e322b7-a693-460e-8247-e189c4463e0b",
+        "label": "Certified pre-owned (CPO)",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "cpo",
+        "navigation": {
+         "type": "next-step"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 1,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 1
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-15882381-bada-4b42-970d-9a4504a007d0",
+      "name": "back-q3",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-b4edc5cc-e41a-4d29-b401-cd5c7c24f5c1",
+    "name": "q4-year",
+    "blocks": [
+     {
+      "id": "block-96ec758e-3416-44c6-a4c4-6c7607518bcf",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>What model year is it?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-183fc33c-8e1c-4dde-a814-fe82c523975d",
+      "name": "vehicle_year",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-8ac8a603-5ca1-4f84-a8af-90dbee9d47aa",
+        "label": "2027",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2027",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-3d2aeaa4-980e-4889-adf8-1f8f9b425289",
+        "label": "2026",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2026",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-5c490423-16c4-40c3-9ed3-6c3ee3818e19",
+        "label": "2025",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2025",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-8edf09f6-c7af-47ea-b3a7-d1c21dce8a6e",
+        "label": "2024",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2024",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-4eda45c7-49d9-408e-bd61-56974e4feac1",
+        "label": "2023",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2023",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-5f4328a4-f0e1-447c-85cc-8a067df27426",
+        "label": "2022",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2022",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-694ca2ae-685b-454a-aa69-714394bd5fc4",
+        "label": "2021",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2021",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-db655cac-38f5-4603-ac5a-682ea3d5a888",
+        "label": "2020",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2020",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-d232bf88-9fa6-471d-9152-d82cf7d1e337",
+        "label": "2019",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2019",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-67106514-c9dd-42d0-84d0-5d8d85196d40",
+        "label": "2018",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2018",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-ee467b62-3641-40d4-b7de-d7f3d3a7796a",
+        "label": "2017",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2017",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-b4897133-bc22-4372-a12c-e3112fe46524",
+        "label": "2016",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2016",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-cbb99d6c-eed3-4363-907a-6f9dee2737f9",
+        "label": "2015 or older",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2015_or_older",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 3,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 3
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-509decd6-e2ec-49f2-85b5-1141bb545c8a",
+      "name": "vehicle_year_older",
+      "type": "text-field",
+      "label": "Model year (1990 to 2015)",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "appearance": {
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "decorators": {
+       "info": "",
+       "prefixIcon": "",
+       "prefixText": "",
+       "suffixIcon": "",
+       "suffixText": "",
+       "maxCharacters": {
+        "value": 8,
+        "enabled": false
+       },
+       "minCharacters": {
+        "value": 3,
+        "enabled": false
+       },
+       "removeWhiteSpace": false
+      },
+      "placeholder": "e.g., 2012",
+      "validations": {
+       "regex": {
+        "regex": "%5E(199%5B0-9%5D%7C200%5B0-9%5D%7C201%5B0-5%5D)%24",
+        "enabled": true
+       },
+       "required": true,
+       "errorMessage": "Please enter a 4-digit year from 1990 to 2015."
+      },
+      "valueFormat": "none",
+      "visibilityConditions": {
+       "id": "cg-10944ec2-aa28-4fac-84e7-bcba3e114ef5",
+       "conditions": [
+        {
+         "id": "cond-d4ff9158-a582-4711-80a3-ced2d0a5bfe4",
+         "value": [
+          "2015_or_older"
+         ],
+         "blockId": "block-183fc33c-8e1c-4dde-a814-fe82c523975d",
+         "operator": "matches_exactly",
+         "blockType": "multiple-choice"
+        }
+       ],
+       "logicOperator": "AND"
+      }
+     },
+     {
+      "id": "block-a75dff62-a3f6-4069-bdd3-6169dbb16a81",
+      "name": "continue-q4",
+      "type": "continue",
+      "label": "Continue",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "next-step"
+       },
+       "trackConversion": false
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "center",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "suffixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M3 16L29 16L28 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M19 26L29 16L19 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": {
+       "id": "cg-4ad10444-fc0c-4a15-b34d-4c20956a1969",
+       "conditions": [
+        {
+         "id": "cond-cb028c51-a215-4066-8c4d-0e5858000236",
+         "value": [
+          "2015_or_older"
+         ],
+         "blockId": "block-183fc33c-8e1c-4dde-a814-fe82c523975d",
+         "operator": "matches_exactly",
+         "blockType": "multiple-choice"
+        }
+       ],
+       "logicOperator": "AND"
+      }
+     },
+     {
+      "id": "block-c415fdbe-da2b-4ac1-8393-afeb9beee286",
+      "name": "back-q4",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-bf3da617-f40e-4425-ae04-91b488e3e78e",
+    "name": "q5-make",
+    "blocks": [
+     {
+      "id": "block-e076bf6b-67e4-4211-909c-eac946abbbde",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Who makes it?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-633dc1e1-e959-4384-a740-a4ca545fd025",
+      "name": "Text",
+      "text": "<p>So the firm knows which vehicle this is.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-20af56eb-33fc-4c7c-be2f-f27915408efa",
+      "name": "vehicle_make",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-4be854dd-3779-4d9b-8246-9117dfc1fb27",
+        "label": "BMW",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "BMW",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-4aef698c-922b-4d47-ad5b-5ebfa0714aa2",
+        "label": "Chevrolet",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Chevrolet",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-4cf36d77-4750-48c5-8a46-602ff4db918f",
+        "label": "Ford",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Ford",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-1ff7185e-9a30-4f24-b2ef-d8c939691c85",
+        "label": "GMC",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "GMC",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-1a2b2697-c901-411d-87e5-407299006f71",
+        "label": "Honda",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Honda",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-46000304-0188-4286-837e-8d30dd7d85b1",
+        "label": "Hyundai",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Hyundai",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-31bc4717-ddcf-4f54-bbde-464cba615d3c",
+        "label": "Jeep",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Jeep",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-c2b21707-7d41-4c32-ad05-4a62156b82ab",
+        "label": "Kia",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Kia",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-c0349a36-15eb-473e-9a14-e0dc4cc05f84",
+        "label": "Mazda",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Mazda",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-7f3f01b4-573f-46ab-b844-418d6b5cbc23",
+        "label": "Mercedes-Benz",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Mercedes-Benz",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-843fc81f-dfb0-4eb6-8308-354a72a4049a",
+        "label": "Nissan",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Nissan",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-552aff5a-7ed1-45db-9e41-e50d64905b5b",
+        "label": "Ram",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Ram",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-af4b1136-e4a4-4e81-9aa3-f2e72d469089",
+        "label": "Rivian",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Rivian",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-fcef1475-224f-40f9-bb9a-8027f5e817ff",
+        "label": "Subaru",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Subaru",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-a21129fa-930f-4b64-996e-e60667726a8b",
+        "label": "Tesla",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Tesla",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-2f9dad52-73b2-449e-a988-a3b46d7cdb0d",
+        "label": "Toyota",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Toyota",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-f18926f1-d7d1-4d7c-a6c6-0dedeb198384",
+        "label": "Volkswagen",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "Volkswagen",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-5344c5d9-48e4-4bda-a6a1-44c367c79adf",
+        "label": "Other",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "other",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 2,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 2
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-e2025e22-c5ac-4b22-bf6c-6d453b86cd1b",
+      "name": "vehicle_make_other",
+      "type": "text-field",
+      "label": "Vehicle make",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "appearance": {
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "decorators": {
+       "info": "",
+       "prefixIcon": "",
+       "prefixText": "",
+       "suffixIcon": "",
+       "suffixText": "",
+       "maxCharacters": {
+        "value": 8,
+        "enabled": false
+       },
+       "minCharacters": {
+        "value": 3,
+        "enabled": false
+       },
+       "removeWhiteSpace": false
+      },
+      "placeholder": "Type the make",
+      "validations": {
+       "regex": {
+        "regex": "%5E%5B%5Cs%5CS%5D%7B1%2C40%7D%24",
+        "enabled": true
+       },
+       "required": true,
+       "errorMessage": "Please type the make."
+      },
+      "valueFormat": "none",
+      "visibilityConditions": {
+       "id": "cg-b182359d-46d5-4a79-bc61-6ad10c3200d7",
+       "conditions": [
+        {
+         "id": "cond-b52453bc-bdf3-4812-a493-50276ecc1a78",
+         "value": [
+          "other"
+         ],
+         "blockId": "block-20af56eb-33fc-4c7c-be2f-f27915408efa",
+         "operator": "matches_exactly",
+         "blockType": "multiple-choice"
+        }
+       ],
+       "logicOperator": "AND"
+      }
+     },
+     {
+      "id": "block-aece9c17-ede3-43f1-ada1-d89655ace0f2",
+      "name": "continue-q5",
+      "type": "continue",
+      "label": "Continue",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "next-step"
+       },
+       "trackConversion": false
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "center",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "suffixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M3 16L29 16L28 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M19 26L29 16L19 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": {
+       "id": "cg-3d216d36-af00-475c-836c-a060b9a54d59",
+       "conditions": [
+        {
+         "id": "cond-b8b94ff9-fa50-4b2a-880f-aea8b95f2a45",
+         "value": [
+          "other"
+         ],
+         "blockId": "block-20af56eb-33fc-4c7c-be2f-f27915408efa",
+         "operator": "matches_exactly",
+         "blockType": "multiple-choice"
+        }
+       ],
+       "logicOperator": "AND"
+      }
+     },
+     {
+      "id": "block-5e971bd4-d917-42c8-9616-6e6ede7f0749",
+      "name": "back-q5",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-a469d4f7-362a-452d-83f4-3c1534dd47c1",
+    "name": "q6-model",
+    "blocks": [
+     {
+      "id": "block-2d6ef579-9818-4115-8821-e5fe3ba05017",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>What model is it?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-0fe81c2e-9fdf-40b6-9355-26fc36a67c00",
+      "name": "vehicle_model",
+      "type": "text-field",
+      "label": "Model",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "appearance": {
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "decorators": {
+       "info": "",
+       "prefixIcon": "",
+       "prefixText": "",
+       "suffixIcon": "",
+       "suffixText": "",
+       "maxCharacters": {
+        "value": 8,
+        "enabled": false
+       },
+       "minCharacters": {
+        "value": 3,
+        "enabled": false
+       },
+       "removeWhiteSpace": false
+      },
+      "placeholder": "e.g., Model, trim if you know it",
+      "validations": {
+       "regex": {
+        "regex": "%5E%5B%5Cs%5CS%5D%7B1%2C40%7D%24",
+        "enabled": true
+       },
+       "required": true,
+       "errorMessage": "Please type the model (up to 40 characters)."
+      },
+      "valueFormat": "none",
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-96c16d7f-910b-4074-af3b-e017c3b4ddaf",
+      "name": "continue-q6",
+      "type": "continue",
+      "label": "Continue",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "next-step"
+       },
+       "trackConversion": false
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "center",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "suffixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M3 16L29 16L28 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M19 26L29 16L19 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-0b0cdf78-fa51-409d-bb5c-2de9cc2369b5",
+      "name": "back-q6",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-ad437247-a31f-4ff5-95e1-158e0e118481",
+    "name": "q7-warranty",
+    "blocks": [
+     {
+      "id": "block-75c1243d-c42a-4537-b912-506628bb0f63",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Was it in the shop for repairs while it was still under the manufacturer&#39;s warranty?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-aecda82a-0b08-44b2-ad85-5e1fd959db03",
+      "name": "Text",
+      "text": "<p>This means the factory warranty from the automaker, not an extended service contract you bought separately.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-78aff845-ba7f-41e3-92fa-549dcce6d959",
+      "name": "warranty_status",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-9d3dffc3-4e17-4dee-a862-a79b425a5013",
+        "label": "Yes",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "yes",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-805bd19c-d3ee-4483-821e-fcff5472ff86",
+        "label": "No",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "no",
+        "navigation": {
+         "step": "step-2ddcaebf-4de0-4808-955e-87db4a78d0b9",
+         "type": "go-to-step"
+        }
+       },
+       {
+        "id": "option-38f6c2b1-857c-4358-a164-91ebd056794b",
+        "label": "Not sure",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "unsure",
+        "navigation": {
+         "step": "step-2ddcaebf-4de0-4808-955e-87db4a78d0b9",
+         "type": "go-to-step"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 1,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 1
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-ed428737-f874-4d50-be28-7bc70e03647d",
+      "name": "back-q7",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-f7dca1d2-c398-46ee-bee8-b5352ed5de77",
+    "name": "q8-visits",
+    "blocks": [
+     {
+      "id": "block-505daf87-cea1-49d2-b0c4-2133471be1df",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>How many times has a dealer or manufacturer-authorized shop tried to fix the same problem?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-def5bbe1-ffae-431f-aabf-435706f24919",
+      "name": "repair_visits",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-2332d49f-27cf-41ed-906e-6081fe515f9b",
+        "label": "None yet",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "0",
+        "navigation": {
+         "step": "step-2ddcaebf-4de0-4808-955e-87db4a78d0b9",
+         "type": "go-to-step"
+        }
+       },
+       {
+        "id": "option-351771dc-3915-44a8-a29f-b5b0e1629d3f",
+        "label": "Once",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "1",
+        "navigation": {
+         "step": "step-2ddcaebf-4de0-4808-955e-87db4a78d0b9",
+         "type": "go-to-step"
+        }
+       },
+       {
+        "id": "option-c7cf143b-e9e2-4742-a4cb-c01d13c4cc39",
+        "label": "2 times",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "2",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-b4a6239c-2611-4949-8167-2603609bd43f",
+        "label": "3 times",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "3",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-516cb6bc-6549-496a-9225-f06e297979f7",
+        "label": "4 or more",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "4plus",
+        "navigation": {
+         "type": "next-step"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 1,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 1
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-6e874e46-dd3a-4775-9f00-776269e7f584",
+      "name": "back-q8",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-7bd49b2b-e80e-47f2-ab5e-9c7c6f3bdbfb",
+    "name": "q9-defect",
+    "blocks": [
+     {
+      "id": "block-b02eec08-ef70-4200-89de-f04823a9d607",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>What&#39;s been going wrong?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-a365cfa5-6c93-41af-a7b4-4fa041b9251a",
+      "name": "Text",
+      "text": "<p>Choose all that apply.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-c1236c41-b097-480d-b778-60185d1bf18e",
+      "name": "defect_category",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-9aa561ca-96dc-48ee-b1a3-c7dd01b4bb0e",
+        "label": "Engine",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "engine",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       },
+       {
+        "id": "option-650a8b23-f106-4b64-a0af-f62b09712435",
+        "label": "Transmission",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "transmission",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       },
+       {
+        "id": "option-82d58361-e177-4786-b552-fcc5843d173c",
+        "label": "Electrical / battery",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "electrical_battery",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       },
+       {
+        "id": "option-cacbcfe5-b67f-4618-9b06-2f01f972685a",
+        "label": "EV battery or charging",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "ev_battery_charging",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       },
+       {
+        "id": "option-357a237b-2a7c-4982-bd6e-65291a343676",
+        "label": "Brakes",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "brakes",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       },
+       {
+        "id": "option-a91211a0-1617-4a37-81c5-ed4244d3375d",
+        "label": "Steering or suspension",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "steering_suspension",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       },
+       {
+        "id": "option-7a0619b1-1ea6-4fc0-8b13-402317815678",
+        "label": "Air bags / safety systems",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "airbags_safety",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       },
+       {
+        "id": "option-f80a33a2-5aa7-4029-88c7-3cc9bdf4c963",
+        "label": "Screens, cameras or infotainment",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "screens_infotainment",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       },
+       {
+        "id": "option-4778291c-7b2b-4bc5-8315-c6038fed0348",
+        "label": "Leaks or water",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "leaks_water",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       },
+       {
+        "id": "option-eb1d6d41-3e5a-4694-b4fa-bd44ee58551b",
+        "label": "Something else",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "something_else",
+        "navigation": {
+         "type": "do-nothing"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "next-step"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": false,
+       "allowMultipleSelection": true
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 2,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 2
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": false,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-ea696925-17fc-4783-aaf9-af53b0b9ecc9",
+      "name": "defect_description",
+      "type": "textarea-field",
+      "label": "Briefly, what's happening? (optional)",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "appearance": {
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "decorators": {
+       "info": "Please don't include medical details or account numbers.",
+       "maxCharacters": {
+        "value": 300,
+        "enabled": true
+       },
+       "minCharacters": {
+        "value": 3,
+        "enabled": false
+       }
+      },
+      "placeholder": "In your own words",
+      "validations": {
+       "required": false,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-7c32dd28-73ed-432b-b2da-c64108bf390a",
+      "name": "continue-q9",
+      "type": "continue",
+      "label": "Continue",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "next-step"
+       },
+       "trackConversion": false
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "center",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "suffixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M3 16L29 16L28 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M19 26L29 16L19 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-8cdaea4e-b23c-4a8b-b52a-4228eba48ade",
+      "name": "back-q9",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-e258c49e-fee2-4686-a8e1-cedfc2cb774c",
+    "name": "q10-unresolved",
+    "blocks": [
+     {
+      "id": "block-052237e4-ec83-437e-b0b5-4da4d6f9b991",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Is the problem still happening after those repairs?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-6d62f809-3e0c-4aa2-bc25-982bb51d3bfb",
+      "name": "defect_unresolved",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-478083ad-64ed-4033-8f53-2b2199142ced",
+        "label": "Yes, still happening",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "yes",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-3f05da9b-1c00-440a-b879-16e09705f698",
+        "label": "Not sure",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "unsure",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-7a983989-4e76-4793-9214-cc1ec0ee7af0",
+        "label": "No, it's been fixed",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "no",
+        "navigation": {
+         "step": "step-2ddcaebf-4de0-4808-955e-87db4a78d0b9",
+         "type": "go-to-step"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 1,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 1
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-afdba75c-d129-4f93-a7c8-089deeeb0e93",
+      "name": "back-q10",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-342b4ef8-4f7a-4c8d-a3f8-030e4e19f262",
+    "name": "q11-docs",
+    "blocks": [
+     {
+      "id": "block-2219ad95-3abd-4263-b543-0ca56d6011be",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Do you have the repair orders or paperwork from those visits?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-0b9b91ed-fe65-49a7-8326-77ffd81e90f4",
+      "name": "Text",
+      "text": "<p>The invoices or repair orders the shop gave you, even if the repairs were free under warranty.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-b037ffc8-b236-4082-8625-f2f49e2a2305",
+      "name": "repair_docs",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-66cf2244-bfd5-46d0-a14d-2dd80fe2f3ed",
+        "label": "Yes, I have them",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "yes",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-32c0bcde-4681-4985-9057-2ce2f91ddcff",
+        "label": "I can get copies",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "can_get",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-395e0074-adf2-4fd0-be73-dad58e3052f2",
+        "label": "No",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "no",
+        "navigation": {
+         "step": "step-2ddcaebf-4de0-4808-955e-87db4a78d0b9",
+         "type": "go-to-step"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 1,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 1
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-7dd813bb-572d-414a-a172-62d8f8df0912",
+      "name": "back-q11",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-94e83f9b-c126-47f9-9ff2-0f64f27d84ce",
+    "name": "q12-lawyer",
+    "blocks": [
+     {
+      "id": "block-413039c5-a647-42c6-a570-69b9dfb54ba2",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Is a lawyer already helping you with this vehicle?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-20b43395-595e-4342-a70c-f797627e99b3",
+      "name": "represented",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-53262963-d409-4b1e-b018-0bf9cc0cfc35",
+        "label": "No",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "no",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-c8d4bf88-333b-453d-be99-44e56c1caf80",
+        "label": "Yes",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "yes",
+        "navigation": {
+         "step": "step-2ddcaebf-4de0-4808-955e-87db4a78d0b9",
+         "type": "go-to-step"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 1,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 1
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-5d1f6ac3-f36a-4df0-81de-48ee3cef6833",
+      "name": "back-q12",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-a2610160-c77d-4d54-89ff-4596057e36c6",
+    "name": "q13-age",
+    "blocks": [
+     {
+      "id": "block-58ad58ae-4f0e-4d6c-9d28-4f6f8b49b5f2",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Are you 18 or older?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-61b3496c-e8ae-4719-a770-950c57c7945e",
+      "name": "age_18_plus",
+      "type": "multiple-choice",
+      "label": "",
+      "preset": null,
+      "options": [
+       {
+        "id": "option-61efe80f-b48c-41c7-b24f-0bfe5ad6c434",
+        "label": "Yes",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "yes",
+        "navigation": {
+         "type": "next-step"
+        }
+       },
+       {
+        "id": "option-8acde788-f1d7-4cd2-964d-df61453b1c6c",
+        "label": "No",
+        "media": {
+         "alt": "Option Icon",
+         "src": "",
+         "type": "icon"
+        },
+        "value": "no",
+        "navigation": {
+         "step": "step-2ddcaebf-4de0-4808-955e-87db4a78d0b9",
+         "type": "go-to-step"
+        }
+       }
+      ],
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "randomize": false,
+       "navigation": {
+        "type": "dynamic"
+       },
+       "defaultValue": "",
+       "reverseOrder": false,
+       "showDescription": false,
+       "maxSelectedCount": {
+        "count": 3,
+        "enabled": false
+       },
+       "sortAlphabetically": false,
+       "navigateOnOptionClick": true,
+       "allowMultipleSelection": false
+      },
+      "appearance": {
+       "layout": {
+        "type": "grid",
+        "itemsPerRow": 1,
+        "alignOptions": "left",
+        "itemsPerRowMobile": 1
+       },
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "reverseContent": false
+      },
+      "decorators": {
+       "info": "",
+       "multipleSelectionSeparator": ", "
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": ""
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-176d61b2-a3ee-4151-87a8-81bd0a46a017",
+      "name": "back-q13",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-7273746e-f710-40a4-a2b6-c0a33a4a2524",
+    "name": "q14-contact",
+    "blocks": [
+     {
+      "id": "block-f78c3c83-7cc2-44cd-89c1-03fe37b71b2a",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Where should the law firm reach you?</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-eb1623ef-4569-44e2-8638-57325faad22f",
+      "name": "Text",
+      "text": "<p>Last step. Your answers go to one law firm only.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-3f46f8be-b52e-4c44-b529-b8211cf47201",
+      "name": "first_name",
+      "type": "text-field",
+      "label": "First name",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "appearance": {
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "decorators": {
+       "info": "",
+       "prefixIcon": "",
+       "prefixText": "",
+       "suffixIcon": "",
+       "suffixText": "",
+       "maxCharacters": {
+        "value": 8,
+        "enabled": false
+       },
+       "minCharacters": {
+        "value": 3,
+        "enabled": false
+       },
+       "removeWhiteSpace": false
+      },
+      "placeholder": "",
+      "validations": {
+       "regex": {
+        "regex": "",
+        "enabled": false
+       },
+       "required": true,
+       "errorMessage": "Please enter your first name."
+      },
+      "valueFormat": "none",
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-71cc5bc7-0ced-4e28-8eaf-b405ae06efa8",
+      "name": "last_name",
+      "type": "text-field",
+      "label": "Last name",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "appearance": {
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "decorators": {
+       "info": "",
+       "prefixIcon": "",
+       "prefixText": "",
+       "suffixIcon": "",
+       "suffixText": "",
+       "maxCharacters": {
+        "value": 8,
+        "enabled": false
+       },
+       "minCharacters": {
+        "value": 3,
+        "enabled": false
+       },
+       "removeWhiteSpace": false
+      },
+      "placeholder": "",
+      "validations": {
+       "regex": {
+        "regex": "",
+        "enabled": false
+       },
+       "required": true,
+       "errorMessage": "Please enter your last name."
+      },
+      "valueFormat": "none",
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-952b98b6-9b95-4672-b738-a908a6d3d9ff",
+      "name": "phone",
+      "type": "phone-number-field",
+      "label": "Mobile phone",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": "",
+       "allowDropdown": false,
+       "initialCountry": "US",
+       "validationRules": {
+        "enabled": false,
+        "allowedLineTypes": [
+         "Mobile",
+         "Landline",
+         "VoIP",
+         "Fixed VoIP",
+         "Non-Fixed VoIP",
+         "Premium",
+         "Toll-Free",
+         "Unknown"
+        ],
+        "blockInvalidNumbers": true,
+        "blockPrepaidNumbers": false,
+        "activityScoreMinimum": 0
+       },
+       "separateDialCode": false,
+       "hidePrefixFromValue": false
+      },
+      "appearance": {
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "decorators": {
+       "info": ""
+      },
+      "placeholder": "",
+      "validations": {
+       "required": true,
+       "errorMessage": "Please enter a valid 10-digit U.S. mobile number.",
+       "apiValidation": false
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-fc24299a-cc25-4699-a571-a1e14ae04222",
+      "name": "email",
+      "type": "email-field",
+      "label": "Email",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "appearance": {
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "decorators": {
+       "info": "",
+       "prefixIcon": "",
+       "prefixText": "",
+       "suffixIcon": "",
+       "suffixText": ""
+      },
+      "placeholder": "name@example.com",
+      "validations": {
+       "required": true,
+       "errorMessage": "Please enter a valid email address.",
+       "apiValidation": false
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-b7fa271c-6a15-4ae9-a731-25575f8b566b",
+      "name": "zip",
+      "type": "zip-code-field",
+      "label": "ZIP code",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "allowedZips": [],
+       "countryCode": "US",
+       "defaultValue": ""
+      },
+      "appearance": {
+       "textAlign": "left",
+       "alignLabel": "left",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "decorators": {
+       "info": "",
+       "prefixIcon": "",
+       "prefixText": "",
+       "suffixIcon": "",
+       "suffixText": ""
+      },
+      "placeholder": "5 digits",
+      "validations": {
+       "required": true,
+       "errorMessage": "Please enter your 5-digit ZIP code."
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-5ec2a995-2f0d-4a24-be51-cd09634124b3",
+      "name": "consent_checked",
+      "type": "checkbox-field",
+      "label": "<p>By checking this box and clicking &quot;Submit,&quot; I give my express written consent for Prestige Legal Solutions, P.C. to contact me about my vehicle warranty and lemon law inquiry by calls, text messages, and emails at the phone number and email address I provided, including calls and texts that may use an automatic telephone dialing system, an artificial or prerecorded voice, or an AI-generated voice, even if my number is on a state or federal Do-Not-Call list. My consent is not a condition of hiring a lawyer or purchasing anything; instead, I can call the firm directly at {{PRESTIGE_INTAKE_PHONE}}. Message frequency varies. Message and data rates may apply. I can opt out at any time by replying STOP to any text or by telling the caller, and I can reply HELP for help. I have read the <a href=\"https://lemonrepaircheck.com/privacy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a>.</p>",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "defaultValue": ""
+      },
+      "appearance": {
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "validations": {
+       "required": true,
+       "errorMessage": "Please check the box to continue."
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-3d48fcc3-dab5-4d75-988f-a7f3bd4a56fc",
+      "name": "Text",
+      "text": "<p>Law firm: Prestige Legal Solutions, P.C., Los Angeles, California (licensed in Washington).</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-481c46b2-c7eb-42e1-b55e-e04d3dde1878",
+      "name": "Text",
+      "text": "<p>We use TrustedForm, a service of ActiveProspect, to record this page and your form entries so there&#39;s a record of the consent you gave.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-4a7afa0d-5e34-4e87-9703-ddc774e49579",
+      "name": "submit",
+      "type": "submit",
+      "label": "Submit",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "submit",
+        "nextAction": {
+         "step": "step-d0d1906d-e772-415a-8537-959f298e5bcf",
+         "type": "go-to-step"
+        }
+       },
+       "trackConversion": false
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "suffixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-send-horizontal-icon lucide-send-horizontal\"><path d=\"M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z\"/><path d=\"M6 12h16\"/></svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-1a6dec5a-b999-42f0-9654-8dfa3545d6e9",
+      "name": "Text",
+      "text": "<p>Privacy notice: We collect your name, contact information, ZIP code, and answers about your vehicle to send your inquiry to the law firm named above. We don&#39;t sell your personal information or share it for cross-context behavioral advertising, and we send it to that one firm only. See our <a href=\"https://lemonrepaircheck.com/privacy\" rel=\"noopener noreferrer\" target=\"_blank\">Privacy Policy</a>.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-8fb33ebe-2ed5-461c-a6dc-64cbd31d1e0d",
+      "name": "back-q14",
+      "type": "previous",
+      "label": "Back",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-d0d1906d-e772-415a-8537-959f298e5bcf",
+    "name": "thank-you",
+    "blocks": [
+     {
+      "id": "block-3672d934-23b8-4eaf-8eaa-6dfe2a0cd9e1",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Thank you, {{first_name}}.</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-1e22b0fb-46bf-46fc-9ecd-78a6afc86b46",
+      "name": "Text",
+      "text": "<p>Your information has been sent to the law firm named in the consent you agreed to.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-78cfd6f9-0333-4978-9992-a0d62117edaf",
+      "name": "Text",
+      "text": "<p>Their intake team may call, text, or email you soon. If you&#39;d like to reach them first, you can call {{PRESTIGE_INTAKE_PHONE}}.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-b4ee9ddf-84a1-481d-9ace-d5e59f5a84f8",
+      "name": "Text",
+      "text": "<p>Tip: have your repair orders and your purchase or lease paperwork handy.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   },
+   {
+    "id": "step-2ddcaebf-4de0-4808-955e-87db4a78d0b9",
+    "name": "not-qualified",
+    "blocks": [
+     {
+      "id": "block-4b92a0a4-29cb-413a-9e24-73aa49f1186f",
+      "name": "Step Title",
+      "type": "headline",
+      "title": "<h1>Thanks for checking.</h1>",
+      "spacing": {
+       "width": "m",
+       "spacing": {
+        "top": 16,
+        "left": 0,
+        "right": 0,
+        "bottom": 16
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-ae52d04d-5598-4c83-9229-96993e0261a7",
+      "name": "Text",
+      "text": "<p>Based on your answers, this inquiry doesn&#39;t fit what this service can take right now.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-10605f73-e7a9-4ff7-9636-a744fe303dec",
+      "name": "Text",
+      "text": "<p>That doesn&#39;t mean you don&#39;t have a claim, and it isn&#39;t legal advice about your situation. Washington&#39;s Attorney General has information about the state&#39;s lemon law at atg.wa.gov, and you may also want to talk with a lawyer of your choice. Legal claims can have deadlines, so it&#39;s best not to wait.</p>",
+      "type": "paragraph",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {},
+      "appearance": {
+       "textAlign": "center",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       }
+      },
+      "visibilityConditions": null
+     },
+     {
+      "id": "block-040818fd-dce7-4b7f-98e8-fd8d73734101",
+      "name": "nq-back",
+      "type": "previous",
+      "label": "Change my last answer",
+      "spacing": {
+       "width": "s",
+       "spacing": {
+        "top": 10,
+        "left": 0,
+        "right": 0,
+        "bottom": 10
+       }
+      },
+      "settings": {
+       "animation": "none",
+       "navigation": {
+        "type": "prev-step"
+       }
+      },
+      "appearance": {
+       "align": "center",
+       "textAlign": "center",
+       "buttonSize": "m",
+       "visibility": {
+        "mobile": true,
+        "desktop": true
+       },
+       "contentAlign": "between",
+       "reverseContent": false,
+       "fitWidthToContent": false
+      },
+      "decorators": {
+       "prefixIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"32px\" height=\"32px\" viewBox=\"0 0 32 32\"> <path d=\"M29 16L3 16L4 16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" data-color=\"color-2\" fill=\"none\"></path> <path d=\"M13 26L3 16L13 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"square\" fill=\"none\"></path> </svg>"
+      },
+      "description": {
+       "value": "",
+       "enabled": false
+      },
+      "visibilityConditions": null
+     }
+    ],
+    "settings": {},
+    "navigationRules": {
+     "rules": [],
+     "fallback": {
+      "type": "next-step"
+     }
+    }
+   }
+  ],
+  "config": {
+   "internal": {
+    "canNavigate": true,
+    "isInsideApp": false
+   },
+   "settings": {
+    "general": {
+     "lead": {
+      "save": true,
+      "immediate": false,
+      "savePartial": true,
+      "sendToIntegrationOnNoDataChange": {
+       "time": 90,
+       "enabled": false
+      }
+     },
+     "title": "",
+     "tracking": {
+      "urlParams": {
+       "enabled": true,
+       "appendQuizData": false
+      }
+     },
+     "userBehavior": {
+      "restoreData": false,
+      "singleSubmit": true,
+      "stepTransitionDelay": {
+       "enabled": false,
+       "seconds": 0
+      },
+      "submitMinLoadingTime": {
+       "enabled": true,
+       "seconds": 2.5
+      },
+      "resetOnBackNavigation": false,
+      "scrollToTopOnNavigation": true
+     }
+    },
+    "customCode": {
+     "submit": "",
+     "navigation": ""
+    }
+   },
+   "progressBar": {
+    "spacing": {
+     "width": "s",
+     "spacing": {
+      "top": 16,
+      "left": 0,
+      "right": 0,
+      "bottom": 16
+     }
+    },
+    "isVisible": false
+   }
+  },
+  "footer": {
+   "blocks": []
+  },
+  "header": {
+   "blocks": []
+  },
+  "formulas": []
+ }
+]

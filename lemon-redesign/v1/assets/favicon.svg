@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><rect width="512" height="512" rx="112" fill="#1F2B33"/><g transform="translate(-4.339 -23.083) scale(1.04136)"><defs><mask id="ma-areverseh" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><rect width="512" height="512" fill="#fff"/>
+<path d="M 160 258 L 224 320 L 390 146" fill="none" stroke="#000" stroke-width="106" stroke-linecap="round" stroke-linejoin="round"/></mask></defs>
+<g mask="url(#ma-areverseh)"><g transform="translate(250 268) rotate(-28) scale(0.97)" stroke="#D4A017" stroke-width="46" fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M -224 0 C -214 -2 -204 -9 -196 -22 C -164 -80 -104 -112 0 -112 C 104 -112 164 -80 196 -22 C 204 -9 214 -2 224 0 C 214 2 204 9 196 22 C 164 80 104 112 0 112 C -104 112 -164 80 -196 22 C -204 9 -214 2 -224 0 Z"/></g></g>
+<path d="M 160 258 L 224 320 L 390 146" fill="none" stroke="#FFFFFF" stroke-width="62" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
