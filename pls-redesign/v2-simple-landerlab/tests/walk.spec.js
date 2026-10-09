@@ -275,7 +275,8 @@ test.describe('v2-simple on saved LanderLab pages', function () {
           'Other'
         ]);
         await expect(page.locator('.mer-hero')).toBeVisible();
-        await expect(page.locator('.mer-call')).toHaveAttribute('href', 'tel:+13233755101');
+        await expect(page.locator('a[href^="tel:"], .mer-call')).toHaveCount(0);
+        if (which === 'live') await expect(page.locator('.mer-strip')).toContainText('(323)');
         await expect(page.locator('.ll-quiz')).toBeHidden();
         const height = await page.locator('.pls-choice').first().evaluate(function (el) { return el.getBoundingClientRect().height; });
         expect(height).toBeGreaterThanOrEqual(56);

@@ -143,7 +143,6 @@
     'html body.pls-v2 .mer-brand-inner{max-width:640px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px}',
     'html body.pls-v2 .mer-brand img{height:34px;width:auto}',
     'html body.pls-v2 .mer-intake{display:none !important}',
-    'html body.pls-v2 .mer-call{font:600 13px/1.2 var(--font);color:var(--navy);text-decoration:none;white-space:nowrap}',
     'html body.pls-v2 .mer-eyebrow,html body.pls-v2 .mer-chips{display:none !important}',
     'html body.pls-v2 .mer-hero{background:transparent !important;color:inherit !important;text-align:center;padding:22px 18px 4px !important;max-width:640px;margin:0 auto}',
     'html body.pls-v2:not([data-step="claim"]) .mer-hero{display:none !important}',
@@ -733,13 +732,14 @@
         '<section class="mer-hero"><h1>Treated unfairly at work in California?</h1><p class="mer-sub">See if you qualify for a free case review.</p></section>';
       document.body.insertBefore(header, document.body.firstChild);
     }
-    var brand = document.querySelector('.mer-brand-inner') || document.querySelector('.mer-brand');
-    if (brand && !brand.querySelector('a[href^="tel:"]')) {
-      var a = document.createElement('a');
-      a.className = 'mer-call';
-      a.href = 'tel:+13233755101';
-      a.textContent = '(323) 375-5101';
-      brand.appendChild(a);
+    // A tappable number lets someone call and skip the funnel. The strip may still show the
+    // number as plain text. Drop any tel: link the page or this add-on would otherwise show.
+    var tels = document.querySelectorAll('a[href^="tel:"]');
+    for (var t = 0; t < tels.length; t++) {
+      var link = tels[t];
+      if (link.closest && link.closest('.ll-quiz')) continue;
+      var text = document.createTextNode(link.textContent || '');
+      if (link.parentNode) link.parentNode.replaceChild(text, link);
     }
   }
   function ensureShell() {
