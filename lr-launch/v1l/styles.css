@@ -329,7 +329,7 @@ a { color: inherit; }
 .progress-fill {
   position: absolute;
   inset: 0 auto 0 0;
-  width: 8%;
+  width: 9%;
   background: #d8b893;
 }
 
@@ -543,6 +543,7 @@ a:focus-visible {
   display: flex;
   gap: 12px;
   align-items: flex-start;
+  margin-top: 16px;
   font-size: 14px;
   line-height: 1.45;
   color: var(--ink);

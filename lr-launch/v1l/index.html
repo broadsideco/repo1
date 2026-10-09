@@ -65,14 +65,14 @@
                 role="progressbar"
                 aria-valuemin="0"
                 aria-valuemax="100"
-                aria-valuenow="8"
-                aria-valuetext="8 percent"
+                aria-valuenow="9"
+                aria-valuetext="9 percent"
                 aria-label="Case review progress"
               >
                 <div class="progress-fill" id="progress-fill"></div>
-                <div class="progress-text" id="progress-text">8%</div>
+                <div class="progress-text" id="progress-text">9%</div>
               </div>
-              <p class="step-meta" id="step-meta">Step 1 of 12</p>
+              <p class="step-meta" id="step-meta">Step 1 of 11</p>
             </div>
 
             <div class="step" data-step="on-job" role="group" aria-labelledby="q-on-job">
@@ -224,6 +224,11 @@
               <label class="field">
                 <input id="email" name="email" type="email" autocomplete="email" aria-labelledby="q-email">
               </label>
+              <label class="consent">
+                <input type="checkbox" id="consent" name="consent_accepted" value="Yes">
+                <span id="consent-copy" data-consent-version="lr-consent-v2">CONSENT_PLACEHOLDER</span>
+              </label>
+              <input type="hidden" name="consent_version" value="lr-consent-v2">
               <p class="step-error" role="alert"></p>
             </div>
 
@@ -232,16 +237,6 @@
               <label class="field">
                 <input id="zip" name="postal_code" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="33101" maxlength="10" aria-labelledby="q-zip">
               </label>
-              <p class="step-error" role="alert"></p>
-            </div>
-
-            <div class="step" data-step="consent" hidden>
-              <h2 id="q-consent">Request your free case check</h2>
-              <label class="consent">
-                <input type="checkbox" id="consent" name="consent_accepted" value="Yes">
-                <span id="consent-copy" data-consent-version="lr-consent-v2">CONSENT_PLACEHOLDER</span>
-              </label>
-              <input type="hidden" name="consent_version" value="lr-consent-v2">
               <p class="step-error" role="alert"></p>
             </div>
 

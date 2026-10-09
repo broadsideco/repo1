@@ -67,7 +67,6 @@ export const STEP_IDS = Object.freeze([
   "phone",
   "email",
   "zip",
-  "consent",
 ]);
 
 /** Hard stops. A lead is not saved. */
@@ -237,7 +236,7 @@ export function evaluateLead(input, today = new Date()) {
   const zip = normalizeZip(answers.zip);
   if (!zip) return fail("zip", "zip");
 
-  if (answers.consent !== true) return fail("consent", "consent");
+  if (answers.consent !== true) return fail("consent", "email");
 
   const keys = GHL_LR_WEBHOOK_KEYS;
   const payload = {
@@ -374,8 +373,7 @@ function init() {
     progressBar.setAttribute("aria-valuetext", `${percent} percent`);
     stepMeta.textContent = `Step ${index + 1} of ${steps.length}`;
     backBtn.hidden = index === 0;
-    continueBtn.textContent =
-      id === "consent" ? "Request my free case check" : "Continue";
+    continueBtn.textContent = id === "email" ? "Agree and Continue" : "Continue";
     if (id === "incident" && windowHintEl) {
       windowHintEl.textContent = windowHint(stateSelect.value);
     }
@@ -473,9 +471,6 @@ function init() {
     }
     if (id === "email") {
       if (!normalizeEmail(answers.email)) return { error: "Enter a valid email address." };
-      return { ok: true };
-    }
-    if (id === "consent") {
       if (!answers.consent) return { error: DQ_MESSAGES.consent };
       return { ok: true };
     }
@@ -540,7 +535,7 @@ function init() {
       showDq(outcome.dq);
       return;
     }
-    if (steps[index].dataset.step !== "consent") {
+    if (index < steps.length - 1) {
       showStep(index + 1, { focus: true });
       return;
     }
@@ -577,7 +572,7 @@ function init() {
     } catch {
       saving = false;
       continueBtn.disabled = false;
-      continueBtn.textContent = "Request my free case check";
+      continueBtn.textContent = "Continue";
       showStepError(steps[index], "We could not save this case check. Please try again.");
     }
   });
@@ -613,7 +608,7 @@ function init() {
   });
 
   const requested = location.hash.replace("#", "");
-  const start = steps.findIndex((step) => step.dataset.step === requested);
+  const start = steps.findIndex((step) => step.dataset.step === (requested === "consent" ? "email" : requested));
   showStep(start >= 0 ? start : 0);
 }
 

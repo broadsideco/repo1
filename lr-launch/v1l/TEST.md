@@ -20,8 +20,9 @@ node --test lr-launch/v1l/quiz.test.mjs
 - Header text logo says **My Employee Rights**. Comments `TOM_LOGO` and `TOM_PHOTO` mark the logo and the hero photograph.
 - Hero sentence is "Injured at work? You could be sitting on a huge settlement", followed by Free check, No commitment, and Pay nothing.
 - One question is on screen. The percent in the bar is large. **Copy step link** copies a URL ending in the step hash.
-- Shareable steps: `#on-job`, `#federal`, `#attorney`, `#state`, `#incident`, `#description`, `#first-name`, `#last-name`, `#phone`, `#email`, `#zip`, `#consent`.
-- Contact is five steps, in this order, and never combined: first name, last name, phone, email, ZIP. Each step shows one question, one field, and Continue. ZIP is still required.
+- Shareable steps: `#on-job`, `#federal`, `#attorney`, `#state`, `#incident`, `#description`, `#first-name`, `#last-name`, `#phone`, `#email`, `#zip`.
+- Contact stays one field per step, in this order: first name, last name, phone, email, ZIP. ZIP is still required and that step shows only the ZIP question.
+- The email step shows the email field, the consent checkbox, and the `lr-consent-v2` paragraph. Its button reads **Agree and Continue**. Unchecked consent stays on the email step.
 
 ## Disqualification
 
@@ -47,7 +48,7 @@ Boundary dates use local calendar days. On a review dated 2026-10-09, `10/09/202
 ## Chips, consent, save
 
 - On `#incident`, each chip fills the date box and **Recorded date** as `mm/dd/yyyy` (for example `10/09/2026`). ISO dates are rejected.
-- The consent paragraph starts as the token `CONSENT_PLACEHOLDER` in the HTML and is replaced with `lr-consent-v2`. The version attribute stays `lr-consent-v2`.
+- The consent paragraph is on the email step. It starts as the token `CONSENT_PLACEHOLDER` in the HTML and is replaced with `lr-consent-v2`, word for word. The version attribute stays `lr-consent-v2`.
 - A full qualifying path (on-job Yes, federal No, attorney No, a covered state, an in-window date, 4+ character description, ZIP, name, phone, email, consent) shows "We have your case check".
 - `document.documentElement.dataset.brdLeadSaved` becomes `"true"`.
 - The `brd-lead-saved` event `detail` contains only these keys: `first_name`, `last_name`, `email`, `phone`, `postal_code`, `state`, `on_the_job`, `federal_employee`, `has_attorney`, `incident_date`, `injury_description`, `consent_accepted`, `consent_version`, `quiz_version`.

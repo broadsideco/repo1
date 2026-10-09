@@ -48,9 +48,19 @@ function qualified(overrides = {}) {
 test("consent placeholder is the unchanged lr-consent-v2 copy", () => {
   assert.equal(CONSENT_VERSION, "lr-consent-v2");
   assert.equal(CONSENT_PLACEHOLDER, LR_CONSENT_V2);
-  assert.ok(LR_CONSENT_V2.length > 80);
+  assert.equal(
+    LR_CONSENT_V2,
+    "I agree that My Employee Rights and its partner law firms may contact me at the phone number and email I provided about this workers' compensation inquiry, including by automated calls, texts, and prerecorded messages. Consent is not required to receive a free case check and is not a condition of any purchase. This form does not create an attorney-client relationship, and My Employee Rights is not a law firm. Message frequency varies. Message and data rates may apply. Reply STOP to opt out of texts and HELP for help.",
+  );
   assert.match(html, /CONSENT_PLACEHOLDER/);
   assert.match(html, /data-consent-version="lr-consent-v2"/);
+  assert.match(source, /Agree and Continue/);
+  const emailBlock = html.split('data-step="email"')[1].split("data-step=")[0];
+  const zipBlock = html.split('data-step="zip"')[1].split("data-step=")[0];
+  assert.match(emailBlock, /CONSENT_PLACEHOLDER/);
+  assert.match(emailBlock, /id="consent"/);
+  assert.doesNotMatch(zipBlock, /consent/i);
+  assert.doesNotMatch(html, /data-step="consent"/);
   assert.doesNotMatch(html, /landerlab/i);
   assert.doesNotMatch(source, /landerlab/i);
 });
@@ -74,9 +84,10 @@ test("contact fields are one step each, in order, and ZIP stays required", () =>
   for (const id of contactOrder) {
     const block = html.split(`data-step="${id}"`)[1].split("data-step=")[0];
     const fields = block.match(/<(input|textarea|select)\b/g) || [];
-    assert.equal(fields.length, 1, id);
+    assert.equal(fields.length, id === "email" ? 3 : 1, id);
     assert.match(block, /<h2/);
   }
+  assert.equal(evaluateLead(qualified({ consent: false }), today).step, "email");
   assert.equal(evaluateLead(qualified({ zip: "" }), today).code, "zip");
   assert.equal(evaluateLead(qualified({ zip: "33101" }), today).ok, true);
 });
