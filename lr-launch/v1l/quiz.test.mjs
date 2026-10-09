@@ -67,6 +67,20 @@ test("page keeps the firm hero and placeholder logo notes", () => {
   assert.equal(html.match(/data-step="([^"]+)"/g).map((item) => item.slice(11, -1)).join(","), STEP_IDS.join(","));
 });
 
+test("contact fields are one step each, in order, and ZIP stays required", () => {
+  const contactOrder = ["first-name", "last-name", "phone", "email", "zip"];
+  const ids = [...html.matchAll(/data-step="([^"]+)"/g)].map((match) => match[1]);
+  assert.deepEqual(ids.filter((id) => contactOrder.includes(id)), contactOrder);
+  for (const id of contactOrder) {
+    const block = html.split(`data-step="${id}"`)[1].split("data-step=")[0];
+    const fields = block.match(/<(input|textarea|select)\b/g) || [];
+    assert.equal(fields.length, 1, id);
+    assert.match(block, /<h2/);
+  }
+  assert.equal(evaluateLead(qualified({ zip: "" }), today).code, "zip");
+  assert.equal(evaluateLead(qualified({ zip: "33101" }), today).ok, true);
+});
+
 test("injury chips emit mm/dd/yyyy", () => {
   assert.equal(chipToMmDdYyyy("today", today), "10/09/2026");
   assert.equal(chipToMmDdYyyy("last-week", today), "10/02/2026");

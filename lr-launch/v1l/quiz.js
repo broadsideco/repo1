@@ -62,11 +62,11 @@ export const STEP_IDS = Object.freeze([
   "state",
   "incident",
   "description",
-  "zip",
   "first-name",
   "last-name",
   "phone",
   "email",
+  "zip",
   "consent",
 ]);
 
@@ -226,9 +226,6 @@ export function evaluateLead(input, today = new Date()) {
   const description = String(answers.description ?? "").trim();
   if (description.length < DESCRIPTION_MIN) return fail("description", "description");
 
-  const zip = normalizeZip(answers.zip);
-  if (!zip) return fail("zip", "zip");
-
   const firstName = String(answers.firstName ?? "").trim();
   if (!firstName) return fail("contact", "first-name");
   const lastName = String(answers.lastName ?? "").trim();
@@ -237,6 +234,8 @@ export function evaluateLead(input, today = new Date()) {
   if (!phone) return fail("contact", "phone");
   const email = normalizeEmail(answers.email);
   if (!email) return fail("contact", "email");
+  const zip = normalizeZip(answers.zip);
+  if (!zip) return fail("zip", "zip");
 
   if (answers.consent !== true) return fail("consent", "consent");
 

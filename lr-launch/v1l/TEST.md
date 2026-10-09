@@ -20,7 +20,8 @@ node --test lr-launch/v1l/quiz.test.mjs
 - Header text logo says **My Employee Rights**. Comments `TOM_LOGO` and `TOM_PHOTO` mark the logo and the hero photograph.
 - Hero sentence is "Injured at work? You could be sitting on a huge settlement", followed by Free check, No commitment, and Pay nothing.
 - One question is on screen. The percent in the bar is large. **Copy step link** copies a URL ending in the step hash.
-- Shareable steps: `#on-job`, `#federal`, `#attorney`, `#state`, `#incident`, `#description`, `#zip`, `#first-name`, `#last-name`, `#phone`, `#email`, `#consent`.
+- Shareable steps: `#on-job`, `#federal`, `#attorney`, `#state`, `#incident`, `#description`, `#first-name`, `#last-name`, `#phone`, `#email`, `#zip`, `#consent`.
+- Contact is five steps, in this order, and never combined: first name, last name, phone, email, ZIP. Each step shows one question, one field, and Continue. ZIP is still required.
 
 ## Disqualification
 

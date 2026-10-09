@@ -195,19 +195,9 @@
               <p class="step-error" role="alert"></p>
             </div>
 
-            <div class="step" data-step="zip" hidden>
-              <h2 id="q-zip">What is your ZIP code?</h2>
-              <label class="field">
-                <span class="field-label">ZIP code</span>
-                <input id="zip" name="postal_code" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="33101" maxlength="10" aria-labelledby="q-zip">
-              </label>
-              <p class="step-error" role="alert"></p>
-            </div>
-
             <div class="step" data-step="first-name" hidden>
               <h2 id="q-first">What is your first name?</h2>
               <label class="field">
-                <span class="field-label">First name</span>
                 <input id="first-name" name="first_name" type="text" autocomplete="given-name" aria-labelledby="q-first">
               </label>
               <p class="step-error" role="alert"></p>
@@ -216,26 +206,31 @@
             <div class="step" data-step="last-name" hidden>
               <h2 id="q-last">What is your last name?</h2>
               <label class="field">
-                <span class="field-label">Last name</span>
                 <input id="last-name" name="last_name" type="text" autocomplete="family-name" aria-labelledby="q-last">
               </label>
               <p class="step-error" role="alert"></p>
             </div>
 
             <div class="step" data-step="phone" hidden>
-              <h2 id="q-phone">What is the best phone number?</h2>
+              <h2 id="q-phone">What is your phone number?</h2>
               <label class="field">
-                <span class="field-label">Phone</span>
                 <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(305) 555-0134" aria-labelledby="q-phone">
               </label>
               <p class="step-error" role="alert"></p>
             </div>
 
             <div class="step" data-step="email" hidden>
-              <h2 id="q-email">What is your email address?</h2>
+              <h2 id="q-email">What is your email?</h2>
               <label class="field">
-                <span class="field-label">Email</span>
                 <input id="email" name="email" type="email" autocomplete="email" aria-labelledby="q-email">
+              </label>
+              <p class="step-error" role="alert"></p>
+            </div>
+
+            <div class="step" data-step="zip" hidden>
+              <h2 id="q-zip">What is your ZIP code?</h2>
+              <label class="field">
+                <input id="zip" name="postal_code" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="33101" maxlength="10" aria-labelledby="q-zip">
               </label>
               <p class="step-error" role="alert"></p>
             </div>

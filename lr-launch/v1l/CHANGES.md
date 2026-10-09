@@ -7,7 +7,8 @@ No LanderLab. The page is static HTML, CSS, and one module.
 ## Look
 
 - Law-firm page, not a quiz skin: white header, serif wordmark, practice section, and a case-review card.
-- One question per step. Each step has a hash (`#on-job`, `#federal`, `#attorney`, `#state`, `#incident`, `#description`, `#zip`, `#first-name`, `#last-name`, `#phone`, `#email`, `#consent`) and a **Copy step link** control.
+- One question per step. Each step has a hash (`#on-job`, `#federal`, `#attorney`, `#state`, `#incident`, `#description`, `#first-name`, `#last-name`, `#phone`, `#email`, `#zip`, `#consent`) and a **Copy step link** control.
+- Contact is never one screen. First name, last name, phone, email, and ZIP are five steps, each with a short question and Continue. ZIP stays required.
 - Header text logo reads **My Employee Rights**. `TOM_LOGO` marks where Tom's logo file replaces the lockup.
 - Hero photo is a CSS gradient (office light and a figure shape). `TOM_PHOTO` in `index.html` and `styles.css` marks where Tom's photograph replaces it.
 - Hero: "Injured at work? You could be sitting on a huge settlement", with Free check, No commitment, and Pay nothing.
