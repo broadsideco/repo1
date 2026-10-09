@@ -155,6 +155,11 @@ async function shot(page, name) {
 
 async function openPage(page, which, posts) {
   posts.length = 0;
+  // LanderLab sets localStorage quiz-<id>.submitted after a save and then refuses another
+  // submit. Each walk is a new visitor, so clear storage before the page scripts run.
+  await page.addInitScript(function () {
+    try { localStorage.clear(); sessionStorage.clear(); } catch (e) {}
+  });
   await page.goto(base + '/' + which, { waitUntil: 'domcontentloaded' });
   await page.waitForSelector('#pls-pct', { timeout: 20000 });
   await page.waitForFunction(function () { return window.PLS_V2 && window.PLS_V2.api; });
@@ -182,7 +187,11 @@ async function clickChoice(page, label) {
 }
 
 async function assertNoMoney(page) {
-  const blob = await page.locator('#pls-root, .mer-hero, #pls-app').innerText();
+  const blob = await page.evaluate(function () {
+    var bits = [];
+    document.querySelectorAll('.mer-hero, .pls-wrap, #pls-app').forEach(function (el) { bits.push(el.innerText || ''); });
+    return bits.join('\n');
+  });
   expect(blob).not.toMatch(MONEY);
 }
 
@@ -211,12 +220,12 @@ async function walkUntil(page, answers, opts) {
       } else {
         await waitQuestionChange(page, q);
       }
-      if (opts.afterContact && opts.afterContact[q]) await opts.afterContact(page, q);
+      if (opts.afterContact && opts.afterContact[q]) await opts.afterContact[q](page, q);
       continue;
     }
     const choice = answers[q];
     if (!choice) throw new Error('No scripted answer for “' + q + '”. Seen: ' + seen.join(' | '));
-    if (opts.beforeChoice && opts.beforeChoice[q]) await opts.beforeChoice(page, q);
+    if (opts.beforeChoice && opts.beforeChoice[q]) await opts.beforeChoice[q](page, q);
     await clickChoice(page, choice);
   }
   throw new Error('Flow did not finish. Seen: ' + seen.join(' | '));

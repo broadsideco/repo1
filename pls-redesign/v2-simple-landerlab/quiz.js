@@ -257,6 +257,13 @@
   function setBlockValue(name, value) {
     var w = block(name);
     if (!w || !w.setValue) return w;
+    // Checkbox setValue maps true/"true" to "checked" and getValue returns that word.
+    // Writing "true" back onto the block makes the required check fail.
+    if (name === 'consent') {
+      var on = value === true || value === 'checked' || value === 'true' || value === 'yes' || value === '1' || value === 1;
+      try { w.setValue(on ? 'checked' : 'unchecked'); } catch (e) {}
+      return w;
+    }
     var want = value == null ? '' : String(value);
     try { w.setValue(want); } catch (e) {}
     if (String(w.getValue() == null ? '' : w.getValue()) !== want && w.block) {

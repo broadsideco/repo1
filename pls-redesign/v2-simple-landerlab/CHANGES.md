@@ -49,4 +49,11 @@ Optional, so the builder preview matches if the add-on is turned off:
 
 ## Offline test
 
-`npm test` in this folder. Playwright injects `quiz.js` into `fixtures/built-113318.html` and `fixtures/live-112190-index.html` at 390px, mocks every request (the quiz runtime is the saved file in `vendor/`), walks the hourly qualify path, the 1099 qualify path, and each DQ path, and checks the JSON LanderLab would POST to `/leads/event`. Shots are in `shots/`.
+`npm test` in this folder. Playwright injects `quiz.js` into `fixtures/built-113318.html` and `fixtures/live-112190-index.html` at 390×844, mocks every request (the quiz runtime is the saved file in `vendor/`), walks the hourly qualify path, the 1099 qualify path, and each of the 11 DQ paths, and checks the JSON LanderLab would POST to `/api/v2/leads/event`.
+
+Last run: **3 passed** (built-113318 walk, live-112190 walk, `CONFIG.enabled` false). `quiz.js` md5 `77bb3abb8c5755543aa82468cdada55c`.
+
+Phone screenshots are in `shots/`:
+
+- built-113318: first screen through thank-you (`00`–`14`), the unchecked-consent error, the 1099 follow-up (`04b`), and all 11 DQ screens.
+- live-112190: first screen, 1099 follow-up, consent, thank-you, and all 11 DQ screens.
